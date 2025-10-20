@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio | About</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* --- About Page Styling (Matches Portfolio Theme) --- */
+    body {
+      font-family: Georgia, serif;
+      background: #111;
+      color: #222;
+    }
+
+    .page {
+      max-width: 1280px;
+      margin: 20px auto;
+      background: #fff;
+      border: 3px solid #f1c6c9;
+      box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.45);
+    }
+
+    header.navbar {
+      background: #e8b7b9;
+      text-align: center;
+      padding: 25px 0 0;
+      position: relative;
+    }
+
+    #logo {
+      display: block;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #000;
+      text-decoration: none;
+      margin-bottom: 12px;
+    }
+
+    .nav-links {
+      background: #d3d3d3;
+      padding: 10px 0;
+      border-top: 2px solid #c7bcbc;
+    }
+
+    .nav-links ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 24px;
+      padding-left: 30px;
+    }
+
+    .nav-links a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #a52a2a;
+      text-shadow: 1px 1px 3px rgba(165, 42, 42, 0.4);
+    }
+
+    #menu {
+      display: none;
+      background: transparent;
+      border: 0;
+      font-size: 1.7rem;
+      cursor: pointer;
+      position: absolute;
+      top: 22px;
+      right: 20px;
+    }
+
+    /* --- About Section --- */
+    .about-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 60px;
+      background: linear-gradient(to bottom right, #fff, #ffe6eb);
+      border-top: 2px solid #f1c6c9;
+      border-bottom: 2px solid #f1c6c9;
+      gap: 40px;
+    }
+
+    .about-text {
+      flex: 1 1 55%;
+      background: #fff;
+      border: 2px solid #f1c6c9;
+      border-radius: 15px;
+      padding: 30px 40px;
+      box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about-text:hover {
+      transform: translateY(-5px);
+      box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .about-text h2 {
+      font-size: 2rem;
+      color: #2b1a1a;
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 16px;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #a52a2a;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+      background: #fff5f7;
+      border-left: 5px solid #f1c6c9;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .about-img {
+      flex: 1 1 35%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .about-img img {
+      width: 330px;
+      height: 330px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 8px solid #fff;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .about-img img:hover {
+      transform: scale(1.05);
+    }
+
+    .footer {
+      background: #f8f8f8;
+      text-align: center;
+      color: #444;
+      padding: 14px;
+      border-top: 3px solid #f1c6c9;
+      font-size: 0.95rem;
+    }
+
+    /* --- Responsive --- */
+    @media (max-width: 900px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 25px;
+      }
+
+      .about-text {
+        width: 90%;
+      }
+
+      .about-img img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .about-section {
+        padding: 30px 15px;
+      }
+
+      .about-text {
+        padding: 20px;
+        font-size: 0.95rem;
+      }
+
+      .about-text h2 {
+        font-size: 1.4rem;
+      }
+
+      .about-img img {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="navbar">
+      <a id="logo" href="index.html">My Portfolio</a>
+      <button id="menu">&#9776;</button>
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html">🏠 Home</a></li>
+          <li><a href="about.html" class="active">👤 About</a></li>
+          <li><a href="contact.html">☎️ Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="about-section">
+      <div class="about-text">
+        <h2>Who I Am 💕</h2>
+        <p>
+          Hello! I’m Sam — a passionate and curious individual who believes in the beauty of self-growth and creativity.
+          I strive to improve each day and inspire others to do the same.  
+        </p>
+        <p>
+          My portfolio reflects who I am — a learner, a dreamer, and someone who believes that the smallest step toward
+          change can make the biggest difference.
+        </p>
+        <p class="quote">
+          “Everyone thinks of changing the world, but no one thinks of changing himself.”  
+          <br><em>– Leo Tolstoy</em>
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="image/photome/a043d357-1845-4979-974a-d2a3c5b37942.jpg" alt="Sam’s Avatar">
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 My Portfolio | Designed with 💖 by Sam</p>
+    </footer>
+  </div>
+
+  <script>
+    const menu = document.getElementById("menu");
+    const navLinks = document.querySelector(".nav-links");
+    menu.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>
