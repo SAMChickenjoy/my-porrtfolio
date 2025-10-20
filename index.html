@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+</head>
+<body class="sam-theme">
+
+  <div class="grid-container">
+
+    <header class="navbar">
+      <a id="logo" href="#">My Portfolio</a>
+      <button id="menu" aria-label="menu">☰</button>
+    </header>
+
+    <nav class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="about.html">❓ About</a></li>
+        <li><a href="contact.html">☎️ Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="left text-section">
+      <p class="quote">
+        Hello I'm Sam who believes in<br>
+        Everyone thinks of changing the world,<br>
+        but no one thinks of changing himself.
+      </p>
+      <p class="author">
+        - Leo Tolstoy
+        <img src="image/photome/try.jpg" alt="fairy" class="fairy">
+      </p>
+    </section>
+
+    <section class="right image-section">
+      <div class="profile-wrap">
+        <img src="image/photome/a043d357-1845-4979-974a-d2a3c5b37942.jpg" 
+             alt="Sam" class="profile-pic">
+        <img src="image/photome/where.jpg" alt="butterfly left" class="butterfly butterfly-left">
+        <img src="image/photome/where.jpg" alt="butterfly right" class="butterfly butterfly-right">
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 My Portfolio | Designed with 💖 by chickenjoy</p>
+    </footer>
+
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById('menu');
+    const navLinks = document.getElementById('navLinks');
+    menuBtn.addEventListener('click', function() {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
